@@ -1,5 +1,5 @@
 # Non-Parametric-Texture-Synthesis
-This project is the midterm team project for CS220: Intermediate Programming. We received 99% on the project. I contributed ~60% of working code and was responsible for implementing the core algorithm.
+This project is the midterm team project for CS220: Intermediate Programming. We received 99% on the project. I contributed ~60% of the working code and was responsible for implementing the core algorithm.
 
 # Features and Demo
 
