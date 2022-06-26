@@ -1,13 +1,21 @@
 # Non-Parametric-Texture-Synthesis
-This project is created based on Efros and Leung’s seminal work “Texture Synthesis by Non-parametric Sampling”.
+This project is the midterm team project for CS220: Intermediate Programming. We received 99% on the project. I contributed ~60% of working code and was responsible for implementing the core algorithm.
+
+# Features and Demo
+
+This project was created based on Efros and Leung’s seminal work “Texture Synthesis by Non-parametric Sampling”.
 Given an exemplar texture image, it can synthesize a larger image by growing the texture.
 
 ![image](https://user-images.githubusercontent.com/64535834/160522394-ab7c0007-0f01-47c3-858b-a5b082e9a332.png)
 
 (picture credit: from slides made by Prof. Misha Kazhdan from Johns Hopkins University)
 
+- Picture 1: the input image
+- Picture 2: the green grid is the window which would "grow" the image
+- Picture 3: the output image; the parts outside the yellow box are all synthesized
 
 
+# Design
 The approach I adopted:
 
 1. To expand the exemplar, identify all boundary pixels – pixels whose values have not been synthesized yet but whose neighbors have. Assign those to-be-set pixels (TBS pixels) a color by copying good color values from the exemplar.
@@ -28,6 +36,3 @@ c) Define the set of best matching exemplar pixels to be those pixels whose weig
 
 6. randomly choose one from best-matching exemplar pixels and transform the TBSpixel's RGB values accordingly.
 7. Repeat until there are no more TBS pixels.
-
-Contributors:
-Bohan Hou (bohanhou14) and Richard Zhang (Richard-Zhang-2002)
